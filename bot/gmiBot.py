@@ -9,7 +9,7 @@ import time
 from config import config
 from utils import utils
 from utils import doorayUtils as dooray
-import config
+
 
 def get_goodmorning_infomation():
     url = "http://blog.naver.com/PostList.nhn?blogId=middlesky&from=postList&categoryNo=6"

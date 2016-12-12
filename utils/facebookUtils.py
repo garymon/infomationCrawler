@@ -1,35 +1,33 @@
 #  -*- coding: euc-kr -*- 
 import json;
-
+import csv;
 import datetime;
 import time;
 import urllib2
+import gzip
+from StringIO import StringIO
 
-# dizwe
-app_id = " "
-app_secret = " "
-access_token = app_id + "|" + app_secret
+from config import config
 
 
-# advaced information
-def getFacebookPageFeedData(page_id, access_token, since, until):
-    #  construct the URL string    
+def get_facebook_page_feed(page_id, since, until):
+
+    app_id = config.FACEBOOK_APP_ID
+    app_secret = config.FACEBOOK_ACCESS_TOKEN
+    access_token = app_id + "|" + app_secret
+
     base = "https://graph.facebook.com"
-    node = "/" + page_id + "/feed"
-    parameters1 = "/?fields=message,created_time,likes.limit(1).summary(true),"
-    #  -b - cf -  comments.fields(message,parent).summary(true) (- cannot see replies)     
-    # # -b - changed if you add parent in  filter(stream){message,id,"parent"}, you can see parent    
-    parameters2 = "comments.summary(true).filter(stream){message}"
+    feed_url = "/" + page_id + "/feed"
+    parameters1 = "/?fields=message"
     time = "&since=%s&until=%s" % (since, until)
     access = "&access_token=%s" % access_token
-    url = base + node + parameters1 + parameters2 + time + access
-    print url  ###DEL        
-    # retrieve data    
-    data = json.loads(request_until_suceed(url))
+    url = base + feed_url + parameters1 + time + access
+    print url
+    data = json.loads(request_to_url(url))
     return data
 
 
-def request_until_suceed(url):
+def request_to_url(url):
     req = urllib2.Request(url)
     success = False
     while success is False:
@@ -38,40 +36,19 @@ def request_until_suceed(url):
             if response.getcode() == 200:
                 success = True
         except Exception, e:
-            print e  # wnat to know what error it is
-            time.sleep(5)
+            print e
             print "Error for url %s : %s" % (url, datetime.datetime.now())
 
     return response.read()
 
 
-def fetch_feed():
-    one_json = getFacebookPageFeedData(page_id, access_token, since, until)
-    wan_data = []
-    j = 0
-    i = 0
-    num = 0
-    while True:
-        try:
-            test_status = one_json["data"][i]
-            processed_test_status = processFacebookPageFeedStatus(test_status)
-            wan_data.append(list(processed_test_status))
-            print "%d th status in %d" % (i, num)
-            i = i + 1
-            num = num + 1
-        except Exception, e:
-            print e
-            try:
-                next_url = one_json["paging"]["next"]  # next url
-                print next_url
-                j = j + 1
-                print "----"
-                # print j #FOR CHECK
-                one_json = json.loads(request_until_suceed(next_url))
-                i = 0
-                continue
-            except KeyError:
-                print 'End of Document'
-                break
+def get_lastest_feed(page_id, since, until):
+    one_json = get_facebook_page_feed(page_id, since, until)
+    if len(one_json["data"]) > 0 :
+        feed = one_json["data"][0]["message"]
+        return feed
+    else:
+        return ""
 
-    return wan_data, num
+
+

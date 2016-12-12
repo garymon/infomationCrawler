@@ -4,46 +4,47 @@
 import cStringIO
 import random
 import time
+from datetime import datetime, timedelta
 
 from config import config
-from utils import utils
 from utils import doorayUtils as dooray
-
+from utils import facebookUtils as facebook
 
 def get_it_information():
-    url = "http://blog.naver.com/PostList.nhn?blogId=middlesky&from=postList&categoryNo=6"
-    soap = utils.get_text_htmlparser(url)
-    divs = soap.find('div', {'id': 'postViewArea'}).find('div').findAll('div')
-    last_index = divs.__len__()
-    msg = utils.replace_with_newlines(divs[last_index - 1])
-    if(utils.is_today(msg)):
-        return msg
+    today = time
+    yesterday = datetime.now() - timedelta(days=1)
+    #feed = facebook.get_lastest_feed(config.FACEBOOK_IT_PAGE_ID, yesterday.strftime("%y-%m-%d"), today.strftime("%y-%m-%d"))
+    feed = facebook.get_lastest_feed(config.FACEBOOK_IT_PAGE_ID, "2016-12-10", "2016-12-13")
+    return feed
+
+def is_sended_info(info):
+    try:
+        f_read = open("./lastest_send_feed.txt", "r");
+    except IOError, e:
+        print("not file exist")
+        f_write = open("./lastest_send_feed.txt", "w");
+        f_write.write(info.encode("utf-8"))
+        f_write.close()
+        return False
+
+    print(info[:30])
+    read_info = unicode(f_read.read(), "utf-8")
+    print(read_info[:30])
+    if info[:30] == read_info[:30]:
+        f_read.close()
+        return True
     else:
-        return ""
-
-
-def get_today_ohaasa():
-    url = "http://twitter.com/hello_ohaasa?lang=ko"
-    soap = utils.get_text_htmlparser(url)
-    ps = soap.find('ol', {'id': 'stream-items-id'}).findAll('p', {'class':'tweet-text'})
-
-    today = time.strftime('%Y년%m월%d일')
-    result = []
-    result.append("별자리 운세 " + today + "\n")
-    for p in ps:
-        if utils.is_today(p.text):
-            result.append('\n'.join(p.text.split("\n")[1:]).encode('utf-8') + "\n")
-    if result.__len__() > 1:
-        return "\n".join(result)
-    else:
-        return ""
-
+        f_read.close()
+        f_write = open("./lastest_send_feed.txt", "w");
+        f_write.write(info.encode("utf-8"))
+        f_write.close()
+        return False
 
 def send_message(bot_name):
     data = []
     info = get_it_information().strip()
 
-    if(info.__len__() < 1):
+    if(info.__len__() < 1 or is_sended_info(info)):
         print("return false")
         return False
     else:
