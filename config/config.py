@@ -17,6 +17,7 @@ ICON_URL = [
 ]
 
 CHAT_HOOK_URL = [
+    "http://hook.dooray.com/services/1387695619080878080/1800613728333582805/60OMP3X4R1WHjcI0bGZvgQ", #friends with soju
     "http://hook.dooray.com/services/1387695619080878080/1800538452602198003/99NKxr3eSpCtUoUEoDl-jA" #gwiyeong bot
 ]
 
