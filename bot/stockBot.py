@@ -38,7 +38,7 @@ def send_message(bot_name):
         post_data = dooray.generate_post_data(icon_url + "\n" + post_data.strip(), icon_url, bot_name)
 
         response = cStringIO.StringIO()
-        for url in config.CHAT_HOOK_URL:
+        for url in config.STOCK_CHAT_HOOK_URL:
             print(url)
             dooray.send_data(url, post_data, response)
 
