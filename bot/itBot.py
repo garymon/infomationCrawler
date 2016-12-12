@@ -10,8 +10,7 @@ from utils import utils
 from utils import doorayUtils as dooray
 
 
-
-def get_itinformation():
+def get_it_information():
     url = "http://blog.naver.com/PostList.nhn?blogId=middlesky&from=postList&categoryNo=6"
     soap = utils.get_text_htmlparser(url)
     divs = soap.find('div', {'id': 'postViewArea'}).find('div').findAll('div')
@@ -42,7 +41,7 @@ def get_today_ohaasa():
 
 def send_message(bot_name):
     data = []
-    info = get_itinformation().strip()
+    info = get_it_information().strip()
 
     if(info.__len__() < 1):
         print("return false")
