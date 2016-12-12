@@ -14,7 +14,7 @@ count = 0
 if len(sys.argv) < 2:
     print("error")
     print("command : python main.py {bot}")
-    print("bot : [gmi, it]")
+    print("bot : [gmi, it, stock]")
     exit(-1)
 
 module_name = sys.argv[1]

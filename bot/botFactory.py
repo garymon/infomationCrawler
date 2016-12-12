@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import itBot, gmiBot
+import itBot, gmiBot, stockBot
 
 
 class BotFactory:
@@ -12,7 +12,10 @@ class BotFactory:
         elif name == "it":
             self.bot_name = "미국발 IT 뉴스"
             self.send_message = itBot.send_message
+        elif name == "stock":
+            self.bot_name = "재무주치의"
+            self.send_message = stockBot.send_message
         else:
             print("bot is not exist")
-            print("bot list : gmi, it")
+            print("bot list : gmi, it, stock")
             exit(-1)
