@@ -17,7 +17,6 @@ def get_goodmorning_infomation():
     divs = soap.find('div', {'id': 'postListBody'}).find('div', {'id': 'postViewArea'}).findAll('div')
     last_index = divs.__len__()
     msg = utils.replace_with_newlines(divs[last_index - 1])
-    print(msg)
     if(utils.is_today(msg)):
         return msg
     else:
