@@ -1,14 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import cStringIO
-import random
-import time
-
-
-from config import config
 from utils import utils
-from utils import doorayUtils as dooray
+from utils import slackUtils as slack
 
 
 def get_goodmorning_infomation():
@@ -32,16 +26,7 @@ def send_message(bot_name):
     else:
         data.append(info)
         post_data = "\n\n".join(data)
-        icon_url = random.choice(config.ICON_URL)
-        # send to dooray-bot
-        post_data = dooray.generate_post_data(icon_url + "\n" + post_data.strip(), icon_url, bot_name)
-
-        response = cStringIO.StringIO()
-        for url in config.STOCK_CHAT_HOOK_URL:
-            print(url)
-            dooray.send_data(url, post_data, response)
-
-        response.close()
+        slack.send_data(post_data)
         print("return true")
         return True
 

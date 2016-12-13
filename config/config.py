@@ -16,18 +16,11 @@ ICON_URL = [
     "http://cfile25.uf.tistory.com/image/220C234E583EFA6E055F2E"
 ]
 
-CHAT_HOOK_URL = [
-    "http://hook.dooray.com/services/1387695619080878080/1800613728333582805/60OMP3X4R1WHjcI0bGZvgQ", #friends with soju
-    "http://hook.dooray.com/services/1387695619080878080/1800538452602198003/99NKxr3eSpCtUoUEoDl-jA" #gwiyeong bot
-]
-
-STOCK_CHAT_HOOK_URL = [
-    "https://hook.dooray.com/services/1387695619080878080/1839281234165005983/gTlPYodcTnu5HZWRZ8eYpA" #gosucbin
-]
-
 FACEBOOK_IT_PAGE_ID = "140367876119675"
 FACEBOOK_ACCESS_TOKEN = "c2b1c0dbb76e5dea2bd88a214d38aa6a"
 FACEBOOK_APP_ID = "180761185726447"
+
+SLACK_INCOMING_URL = "https://hooks.slack.com/services/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"
 
 
 MAX_TRY_COUNT = 72
