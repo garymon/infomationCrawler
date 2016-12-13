@@ -51,7 +51,7 @@ def send_message(bot_name):
         data.append(get_today_ohaasa().strip().decode('utf-8'))
         post_data = "\n\n".join(data)
 
-        slack.send_data(post_data)
+        slack.send_data(post_data, bot_name)
         print("return true")
         return True
 

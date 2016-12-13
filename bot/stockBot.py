@@ -26,7 +26,7 @@ def send_message(bot_name):
     else:
         data.append(info)
         post_data = "\n\n".join(data)
-        slack.send_data(post_data)
+        slack.send_data(post_data, bot_name)
         print("return true")
         return True
 

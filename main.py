@@ -20,7 +20,6 @@ if len(sys.argv) < 2:
 module_name = sys.argv[1]
 
 task = botFactory.BotFactory(module_name)
-icon_url = random.choice(config.ICON_URL)
 print("Max Try Count = " + str(config.MAX_TRY_COUNT))
 
 while(task.send_message(task.bot_name) == False):

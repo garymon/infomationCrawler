@@ -5,8 +5,9 @@ import requests
 from config import config
 
 
-def send_data(message, username, channel):
+def send_data(message, username):
     body = {
+        'username': username,
         'text': message,
     }
     headers = {'contents-type': 'application/json'}
