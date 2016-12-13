@@ -13,8 +13,7 @@ from utils import facebookUtils as facebook
 def get_it_information():
     today = time
     yesterday = datetime.now() - timedelta(days=1)
-    #feed = facebook.get_lastest_feed(config.FACEBOOK_IT_PAGE_ID, yesterday.strftime("%y-%m-%d"), today.strftime("%y-%m-%d"))
-    feed = facebook.get_lastest_feed(config.FACEBOOK_IT_PAGE_ID, "2016-12-10", "2016-12-13")
+    feed = facebook.get_lastest_feed(config.FACEBOOK_IT_PAGE_ID, yesterday.strftime("%y-%m-%d"), today.strftime("%y-%m-%d"))
     return feed
 
 def is_sended_info(info):
