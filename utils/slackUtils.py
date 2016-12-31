@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import requests
-from config import config
+from config import myConfig as config
 
 
 def send_data(message, username):

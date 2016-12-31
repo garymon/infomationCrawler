@@ -7,7 +7,7 @@ import urllib2
 import gzip
 from StringIO import StringIO
 
-from config import config
+from config import myConfig as config
 
 
 def get_facebook_page_feed(page_id, since, until):
@@ -22,7 +22,6 @@ def get_facebook_page_feed(page_id, since, until):
     time = "&since=%s&until=%s" % (since, until)
     access = "&access_token=%s" % access_token
     url = base + feed_url + parameters1 + time + access
-    print url
     data = json.loads(request_to_url(url))
     return data
 
