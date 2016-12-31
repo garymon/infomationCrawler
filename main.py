@@ -21,7 +21,7 @@ module_name = sys.argv[1]
 
 task = botFactory.BotFactory(module_name)
 print("Max Try Count = " + str(config.MAX_TRY_COUNT))
-
+print("Start At " + str(datetime.datetime.now()))
 while(task.send_message(task.bot_name) == False):
     print(datetime.datetime.now())
     print("sendMessageFail")
