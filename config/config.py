@@ -21,7 +21,24 @@ ICON_URL = [
     "http://cfile5.uf.tistory.com/image/2539063E55BD490D209ADF",
     "http://cfile30.uf.tistory.com/image/26715E4955FB75E6046370",
     "http://cfile10.uf.tistory.com/image/243E0035558961C50D1024",
-    "http://cfile26.uf.tistory.com/image/23399935558961D1119880"
+    "http://cfile26.uf.tistory.com/image/23399935558961D1119880",
+    "http://cfile23.uf.tistory.com/image/24442D485867AE6937A71F",
+    "http://cfile5.uf.tistory.com/image/261E4937569B213817FE57",
+    "http://cfile23.uf.tistory.com/image/2253804A5867B67D356CD1",
+    "http://cfile27.uf.tistory.com/image/2456CD4C5867DD75012266",
+    "http://cfile25.uf.tistory.com/image/260F673D563D853013112C",
+    "http://cfile23.uf.tistory.com/image/261390405628EE7738ACB9",
+    "http://cfile28.uf.tistory.com/image/2339844D5866531D0E7CED",
+    "http://kinimage.naver.net/20151112_192/14473037794140pKBX_GIF/tumblr_nd9dikIsIv1r85bico1_250.gif?type=w620",
+    "http://kinimage.naver.net/20151112_126/1447303784823MAVIt_GIF/tumblr_nxamqe88TV1uqdy6ro2_250.gif?type=w620",
+    "http://cfile6.uf.tistory.com/image/260BE1395869B374075F9E",
+    "https://3.bp.blogspot.com/-emNt5jovPeM/WB__PdCFJxI/AAAAAAAACSM/5iu7Ea00Qqwnc-QkHNnzapQjdYN11pxXwCLcB/s1600/1478489029.gif",
+    "http://simsimhada.com/data/file/jjalbang/20160928/fd8ec73f42ba7a5be1e4cc58a9b6a01f.gif",
+    "http://simsimhada.com/data/file/jjalbang/20160928/ee6e16df1f997dd112c32c16d1b9068f.gif",
+    "http://simsimhada.com/data/file/jjalbang/20160928/986a0bae45410182e3f350d72f7bec8f.gif",
+    "http://cfile25.uf.tistory.com/image/270A243F578AA640179F4E",
+    "http://cfile26.uf.tistory.com/image/227FEF3F578AA6451BA761",
+    "http://cfile29.uf.tistory.com/image/230AA43F578AA658172A31",
 ]
 
 CHAT_HOOK_URL = [
