@@ -42,6 +42,7 @@ ICON_URL = [
     "http://cfile4.uf.tistory.com/image/2416F73F55A8A5BC229EA0",
     "http://cfile4.uf.tistory.com/image/2416F73F55A8A5BC229EA0",
     "http://cfile22.uf.tistory.com/image/2363044B58BC46A30168D0",
+    "http://cfile28.uf.tistory.com/image/2574854755ADD1000FE8F4",
 ]
 
 CHAT_HOOK_URL = [
