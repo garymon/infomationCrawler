@@ -33,13 +33,9 @@ ICON_URL = [
     "http://kinimage.naver.net/20151112_126/1447303784823MAVIt_GIF/tumblr_nxamqe88TV1uqdy6ro2_250.gif?type=w620",
     "http://cfile6.uf.tistory.com/image/260BE1395869B374075F9E",
     "https://3.bp.blogspot.com/-emNt5jovPeM/WB__PdCFJxI/AAAAAAAACSM/5iu7Ea00Qqwnc-QkHNnzapQjdYN11pxXwCLcB/s1600/1478489029.gif",
-    "http://simsimhada.com/data/file/jjalbang/20160928/fd8ec73f42ba7a5be1e4cc58a9b6a01f.gif",
-    "http://simsimhada.com/data/file/jjalbang/20160928/ee6e16df1f997dd112c32c16d1b9068f.gif",
-    "http://simsimhada.com/data/file/jjalbang/20160928/986a0bae45410182e3f350d72f7bec8f.gif",
     "http://cfile25.uf.tistory.com/image/270A243F578AA640179F4E",
     "http://cfile26.uf.tistory.com/image/227FEF3F578AA6451BA761",
     "http://cfile29.uf.tistory.com/image/230AA43F578AA658172A31",
-    "http://cfile4.uf.tistory.com/image/2416F73F55A8A5BC229EA0",
     "http://cfile4.uf.tistory.com/image/2416F73F55A8A5BC229EA0",
     "http://cfile22.uf.tistory.com/image/2363044B58BC46A30168D0",
     "http://cfile28.uf.tistory.com/image/2574854755ADD1000FE8F4",
@@ -63,6 +59,14 @@ CHAT_HOOK_URL = [
     "http://hook.dooray.com/services/1387695619080878080/1800538452602198003/99NKxr3eSpCtUoUEoDl-jA", #gwiyeong bot
     "https://hook.dooray.com/services/1387695619080878080/1851132032137964071/BnGA4EFcQ5uzb4WF8TbOgQ" # from jinwoo lee; 
 ]
+
+GIF_CHAT_HOOK_URL = [
+    "http://hook.dooray.com/services/1387695619080878080/1800538452602198003/99NKxr3eSpCtUoUEoDl-jA", #gwiyeong bot
+    "https://hook.dooray.com/services/1387695619080878080/1924688966878567837/H4jmkMRyRwSQl-NSvalBmA", #smoke
+]
+
+SEND_GIF_START_HOUR = 10
+SEND_GIF_END_HOUR = 18
 
 STOCK_CHAT_HOOK_URL = [
     "https://hook.dooray.com/services/1387695619080878080/1839281234165005983/gTlPYodcTnu5HZWRZ8eYpA" #gosucbin

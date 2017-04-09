@@ -52,6 +52,7 @@ def send_message(bot_name):
         post_data = "\n\n".join(data)
         icon_url = random.choice(config.ICON_URL)
         # send to dooray-bot
+
         post_data = dooray.generate_post_data(icon_url + "\n" + post_data.strip(), icon_url, bot_name)
 
         response = cStringIO.StringIO()
