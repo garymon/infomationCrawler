@@ -24,7 +24,7 @@ def get_anymarina_bot_info():
 def checkWorkingDay():
     #except 5, 6
     if datetime.today().weekday() > 4:
-        print("false")
+        print("working day check False")
         return False
 
     current = datetime.now()
@@ -32,10 +32,10 @@ def checkWorkingDay():
     print(config.SEND_GIF_START_HOUR)
     print(config.SEND_GIF_END_HOUR)
     if config.SEND_GIF_START_HOUR < current.hour and config.SEND_GIF_END_HOUR > current.hour:
-        print("true")
+        print("working time check True")
         return True
     else:
-        print("false")
+        print("working time check False")
         return False
 
 def getIcon():
@@ -60,7 +60,7 @@ def getIcon():
 
 
 def send_message(bot_name):
-    if checkWorkingDay():
+    if not checkWorkingDay():
         print("Time is Over")
         return True
 
@@ -76,7 +76,7 @@ def send_message(bot_name):
         dooray.send_data(url, post_data, response)
 
     response.close()
-    print("return true")
+    print("return True")
     return True
 
 
