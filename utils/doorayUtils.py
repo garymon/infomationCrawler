@@ -29,9 +29,13 @@ def send_data(url, post_data, response):
     return ret
 
 
-def generate_post_data(msg, icon_url, bot_name):
+def generate_post_data(msg, icon_url, bot_name, includePrefix = True):
     # generate json data to post
-    channelPrefix = "[@Channel](dooray://1387695619080878080/channels/1612808706219234589 \"channel\")\n"
+    if includePrefix:
+        channelPrefix = "[@Channel](dooray://1387695619080878080/channels/1612808706219234589 \"channel\")\n"
+    else:
+        channelPrefix = ""
+
     fmt = json.dumps({"botName": bot_name, "botIconImage": icon_url, "text": channelPrefix + msg, "attachments": []})
     return fmt
 
