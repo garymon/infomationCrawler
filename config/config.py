@@ -43,6 +43,19 @@ ICON_URL = [
     "http://cfile4.uf.tistory.com/image/2416F73F55A8A5BC229EA0",
     "http://cfile22.uf.tistory.com/image/2363044B58BC46A30168D0",
     "http://cfile28.uf.tistory.com/image/2574854755ADD1000FE8F4",
+    "http://cfile22.uf.tistory.com/image/257D0236531C68B213FB63",
+    "https://lh5.googleusercontent.com/proxy/k4pnV8ZG0BzQlSzxiYjbyH1ZcwbysVYVonmRbdBG5TxZhN4bCm8VDlOpdBYt4MByypA-mHpgdnLOFhafbaGS-QI8w8IVc4QAaF6DPgFL9EFlZdtVZNE5eD6lCsk=s0-d",
+"http://cfile2.uf.tistory.com/original/230FAC3658E51C092ECFA4",
+"http://cfile28.uf.tistory.com/image/244AFB3A58DD334602259B",
+"http://cfile27.uf.tistory.com/image/2256564158E6EEE12A99B4",
+"http://cfile10.uf.tistory.com/image/234B594158E6EEF231A071",
+"http://cfile27.uf.tistory.com/image/2678F74158E6EF021C407C",
+"http://cfile21.uf.tistory.com/image/26257B4158E6EF04274F3E",
+"http://cfile4.uf.tistory.com/image/21133B4158E6EF12488A4A",
+"http://cfile29.uf.tistory.com/image/2134024358E6EF23284F31",
+"http://cfile25.uf.tistory.com/image/27226F4358E6EF282EA7BB",
+"http://cfile3.uf.tistory.com/image/22451D4358E6EF2E2C7FC1",
+"http://cfile26.uf.tistory.com/original/21086F3958B2C3F7190A3B",
 ]
 
 CHAT_HOOK_URL = [
