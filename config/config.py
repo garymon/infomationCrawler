@@ -8,14 +8,12 @@ ICON_URL = [
     "http://thimg.todayhumor.co.kr/upfile/201512/1451206012142.gif",
     "http://cfile22.uf.tistory.com/image/2748E53E573FE0C6373083",
     "http://image.fmkorea.com/files/attach/new/20161029/3655109/476425690/494852596/fd6dc457dcd6ee9f896e0c6724c491d9.gif",
-    "http://file2.instiz.net/data/cached_img/upload/2016/10/24/0/c23503381c9f4568793af49b989f0ee6.gif",
     "http://file2.instiz.net/data/cached_img/upload/2016/10/24/0/f84ad1b049f6e7c0dfd8c59e182766c0.gif",
     "https://2.bp.blogspot.com/-mBtbKi2d3BI/WBW9DKxhfXI/AAAAAAABbEY/gqySwEOHVCc0Krxu5YQkv9LSRJGhSjdkwCLcB/s0/%25EC%259D%258C%25EC%2595%2585%25EC%25A4%2591%25EC%258B%25AC%2B%25ED%258A%25B8%25EC%2599%2580%25EC%259D%25B4%25EC%258A%25A4%2B%25EC%259A%25B8%25EB%25B3%25B4%2B%25EC%25B6%25A4%2B%25EC%259B%2580%25EC%25A7%25A4%2B%25282%2529.gif",
     "http://image.fmkorea.com/files/attach/new/20160728/3655109/81379802/424399056/f68e76875e0fd0f18e33612c52949dbd.gif",
     "http://image.fmkorea.com/files/attach/new/20160728/3655109/81379802/424399056/8b324120f8a59900a1c1fbae20d97f3a.gif",
     "http://cfile25.uf.tistory.com/image/220C234E583EFA6E055F2E",
     "http://cfile26.uf.tistory.com/image/234A114D58612650265B49",
-    "http://cfile25.uf.tistory.com/image/22444A4E586508B00BA5FC",
     "http://cfile4.uf.tistory.com/image/2152D54158650B4613E440",
     "http://cfile26.uf.tistory.com/image/2130283E55BD4904232937",
     "http://cfile5.uf.tistory.com/image/2539063E55BD490D209ADF",
@@ -52,6 +50,25 @@ ICON_URL = [
 "http://cfile25.uf.tistory.com/image/27226F4358E6EF282EA7BB",
 "http://cfile3.uf.tistory.com/image/22451D4358E6EF2E2C7FC1",
 "http://cfile26.uf.tistory.com/original/21086F3958B2C3F7190A3B",
+"http://file2.instiz.net/data/file2/2016/06/14/2/3/b/23b892de45f80c141bd823957cbef613.gif",
+"http://file2.instiz.net/data/file2/2016/06/14/1/6/8/168d5d25771ff68d6fbfdc8625b9f21f.gif",
+"http://mblogthumb1.phinf.naver.net/20151026_124/syoli7249_1445835781675MnWRa_GIF/20141031_044338_456462085.gif?type=w2",
+"http://mblogthumb1.phinf.naver.net/20151026_144/syoli7249_1445835790027UR7Qw_GIF/2109253952_7bc61bfe.gif?type=w2",
+"http://mblogthumb1.phinf.naver.net/20151026_148/syoli7249_14458358025920Lksm_GIF/natepann574356956.gif?type=w2",
+"http://file2.instiz.net/data/file2/2016/12/10/f/1/7/f17227a8b07e627b2ec6f4bf61420732.gif",
+"http://file2.instiz.net/data/file2/2017/03/01/e/3/9/e39e319c9b96931113c59142ea4fbcb7.gif",
+"http://cfile26.uf.tistory.com/image/2723213356ED224819EAEA",
+"http://cfile24.uf.tistory.com/image/27456C4255C97EAF28C970",
+"http://cfile29.uf.tistory.com/image/255B294358B953B10AD322",
+"http://cfile7.uf.tistory.com/image/2521504152F45DA72E729A",
+"http://img1.daumcdn.net/thumb/R1920x0/?fname=http://cfile3.uf.tistory.com/image/2279675052A2AFCF378173",
+"http://img1.daumcdn.net/thumb/R1920x0/?fname=http://cfile26.uf.tistory.com/image/223A444752A2B085238329",
+"http://file1.bobaedream.co.kr/multi_image/strange/2016/07/12/12/HAs57846adb206d7.gif",
+"http://cfile10.uf.tistory.com/image/271B5A3E545315CC10C8D2",
+"https://www.fmnation.net/files/attach/images/425025/628/336/006/d575b706e397670e7c1afa1e4faa8d33.gif",
+"http://dcimg2.dcinside.co.kr/viewimage.php?id=24a8ef28e0c5&no=29bcc427b28477a16fb3dab004c86b6f97928ae591e31d34f52af2606813ac91819e73cd9d4e6bdb52558b297a6ec4ef7ae0b8461d91ba3f",
+"http://dcimg2.dcinside.co.kr/viewimage.php?id=24a8ef28e0c5&no=29bcc427b28477a16fb3dab004c86b6f97928ae591e31d34f72af2606813ac9108e802ed1d7bc10c682dfc37b744e6f5a47d93e7a37fbe0f",
+"https://1.bp.blogspot.com/-6EBiK1PNlPA/WOuXxhc7ILI/AAAAAAAAPGQ/B2pxed0an5E5TuUiCMgrFIqijzoFSlnQgCLcB/s1600/%ED%81%B4%EB%9D%BC%EB%A0%8C%EC%95%84%EC%9D%B4%EB%A6%AC%EC%8A%A4_cf_%EB%A9%94%EC%9D%B4%ED%82%B9%ED%95%84%EB%A6%84%282016%29_gif_7.gif",
 ]
 
 CHAT_HOOK_URL = [
@@ -65,7 +82,7 @@ GIF_CHAT_HOOK_URL = [
     "https://hook.dooray.com/services/1387695619080878080/1924688966878567837/H4jmkMRyRwSQl-NSvalBmA", #smoke
 ]
 
-SEND_GIF_START_HOUR = 10
+SEND_GIF_START_HOUR = 9
 SEND_GIF_END_HOUR = 18
 
 STOCK_CHAT_HOOK_URL = [
