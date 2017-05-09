@@ -6,7 +6,7 @@ import random
 import time
 from datetime import datetime, timedelta
 
-from config import config
+from config import myConfig as config
 from utils import slackUtils as slack
 from utils import facebookUtils as facebook
 
