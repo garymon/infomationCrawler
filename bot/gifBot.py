@@ -13,7 +13,7 @@ from utils import doorayUtils as dooray
 
 def get_anymarina_bot_info():
     domain = "https://twitter.com"
-    url = domain + "/alliswell_bot/"
+    url = domain + "/Hangeul_doumi/"
     soap = utils.get_text_htmlparser(url)
     tweets = soap.find('li', {"data-item-type":"tweet"})
     permlinks = tweets.find('div', {'class':'tweet'})['data-permalink-path']
@@ -23,9 +23,9 @@ def get_anymarina_bot_info():
 
 def get_huribaro_bot_info():
     domain = "https://twitter.com"
-    url = domain + "/huribaro/"
+    url = domain + "/hurry_pu/"
     soap = utils.get_text_htmlparser(url)
-    tweets = soap.find('li', {"data-item-type":"tweet"})
+    tweets = [tag for tag in soap.find_all('li', {"data-item-type":"tweet"}) if "js-pinned" not in tag['class']][0]
     #permlinks = tweets.find('div', {'class':'tweet'})['data-permalink-path']
     divs = tweets.find('div',{"class":"content"}).find('p', {"class":"tweet-text"})
     msg = utils.replace_with_newlines(divs)
@@ -42,8 +42,12 @@ def checkWorkingDay():
     print(config.SEND_GIF_START_HOUR)
     print(config.SEND_GIF_END_HOUR)
     if config.SEND_GIF_START_HOUR <= current.hour and config.SEND_GIF_END_HOUR >= current.hour:
-        print("working time check True")
-        return True
+	if current.hour%2 == 0:		
+	    print("working time check True")
+            return True
+	else:
+	    print("working time chekc False, odd hour")
+	    return False
     else:
         print("working time check False")
         return False
@@ -77,7 +81,6 @@ def send_message(bot_name):
     icon_url = getIcon()
     msg = get_anymarina_bot_info()
     msg += "\n" + get_huribaro_bot_info()
-
     # send to dooray-bot
     post_data = dooray.generate_post_data(icon_url + "\n" + msg, icon_url, bot_name, False)
 

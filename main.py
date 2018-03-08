@@ -18,7 +18,7 @@ if len(sys.argv) < 2:
     exit(-1)
 
 module_name = sys.argv[1]
-
+print(module_name)
 task = botFactory.BotFactory(module_name)
 icon_url = random.choice(config.ICON_URL)
 print("Max Try Count = " + str(config.MAX_TRY_COUNT))

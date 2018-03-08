@@ -27,7 +27,8 @@ def replace_with_newlines(element):
     text = ''
     for elem in element.recursiveChildGenerator():
         if isinstance(elem, types.StringTypes):
-            text += elem.strip()
+            if 'SE3-TEXT' not in elem:
+                text += elem.strip()
         elif elem.name == 'br':
             text += '\n'
     return text

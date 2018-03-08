@@ -12,9 +12,10 @@ from utils import doorayUtils as dooray
 
 
 def get_goodmorning_infomation():
-    url = "http://blog.naver.com/PostList.nhn?blogId=middlesky&from=postList&categoryNo=6"
+    url = "http://blog.naver.com/PostList.nhn?blogId=skylake3753&categoryNo=6&currentPage=1"
+	
     soap = utils.get_text_htmlparser(url)
-    divs = soap.find('div', {'id': 'postViewArea'}).find('div').findAll('div')
+    divs = soap.find('div', {'id': 'postListBody'}).find('td', {'class':'bcc'}).findAll('div', {'class':'se_component'})
     last_index = divs.__len__()
     msg = utils.replace_with_newlines(divs[last_index - 1])
     if(utils.is_today(msg)):
